@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+</head>
+<body dir="rtl" lang="he" >
+
+    <div data-role="page" id="page1">
+
+        <div data-role="header">
+            <h1>שאלון קולינריה</h1>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p>ברוכים הבאים לשאלון שלנו</p>
+            <label for="slider-1">Slider:</label>
+            <input type="range" name="slider-1" id="slider-1" min="0" max="2" value="0">
+
+            <a href="#page2" class="ui-btn ui-shadow" data-transition="slide"  data-direction="reverse" id="start">לחץ כאן כדי להתחיל</a>
+        </div><!-- /content -->
+
+        <div data-role="footer">
+            <h4>כל הזכויות שמורות</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+
+    <div data-role="page" id="page2">
+
+        <div data-role="header">
+            <h1>שאלון קולינריה שאלה 1</h1>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p id="myQuition"></p>
+            
+            <fieldset data-role="controlgroup" data-type="horizontal">
+                <legend>בחר בתשובה</legend>
+                <input type="radio" name="radio-choice-h-2" id="radio1" value="1">
+                <label id="lbl1" for="radio1">One</label>
+                <input type="radio" name="radio-choice-h-2" id="radio2" value="2">
+                <label id="lbl2" for="radio2">Two</label>
+                <input type="radio" name="radio-choice-h-2" id="radio3" value="3">
+                <label id="lbl3" for="radio3">Three</label>
+                <input type="radio" name="radio-choice-h-2" id="radio4" value="4">
+                <label id="lbl4" for="radio4">Four</label>
+            </fieldset>
+
+
+            <a href="#p" id="bdock" class="ui-btn ui-shadow" data-transition="slide"  data-direction="reverse">בדוק</a>
+        <div id="myDialog">
+            <p id="correct"></p>
+        </div>
+            <a href="#page1" class="ui-btn ui-shadow" data-transition="slide"  data-direction="reverse">חזרה להתחלה</a>
+        </div><!-- /content -->
+
+        <div data-role="footer">
+            <h4>Page Footer</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+    <div data-role="page" id="page3">
+
+        <div data-role="dialog">
+            <h1>שאלון קולינריה</h1>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <p id="correct"></p>
+
+
+        </div><!-- /content -->
+
+        <div data-role="footer">
+            <h4>כל הזכויות שמורות</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+
+
+
+
+
+</body>
+</html>
